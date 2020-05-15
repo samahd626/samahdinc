@@ -1,6 +1,7 @@
 body{
   overflow-x: hidden;
 }
+
 .pen {
   display: flex;
   flex-direction: column;
@@ -13,27 +14,40 @@ body{
   transform: skewY(5deg );
 
 }
-.balls{
-  margin-top: 40px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: black;
+.pen2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-content: center;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-image: url('media/fairy-tale-2.png');
   text-align: center;
-  padding: 10px;
-  font-family: magneto;
+  color: white;
+  font-family: cursive;
+  padding-top: 200px;
+  font-size: 40px;
+}
+.footer{
+  font-family: monospace;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
   font-size: 20px;
-  color: gold; 
-  border:5px solid gold;
 }
 .photorotate{
   padding-top: 30px;
   padding-left: 10px;
 }
-.photorotate img{
-  width: 100%;
-  border-radius: 10px;
+.cardtalk{
+  padding-left: 10px;
 }
+.sectionheader{
+  font-family: cursive;
+  font-weight: bolder;
+}
+
 .text {
   color: white ;
   font-family: cursive; /*'Roboto', sans-serif*/
@@ -63,11 +77,58 @@ body{
 .navbar-brand img{
   height: 30px;
 }
+
+#bighead{
+  font-family: tahoma;
+  font-size: 25px;
+  animation-name: bighead;
+  animation-duration: 10s;
+  animation-iteration-count:1;
+}
+@keyframes bighead{
+  0%{color: green;}
+  50%{color: yellow;}
+  70%{color: red;}
+  100%{color: grey}
+}
+.headerimg img{
+  width: 80%;
+  padding-left: 10%;
+  border-radius: 5px;
+}
+.social{
+  font-family: cursive;
+  font-size: 20px;
+  text-align: center;
+  color: grey;
+}
+
 @media (max-width: 850px){
+  body{
+    overflow-x:hidden;
+  }
+  
+  .headerimg img{
+  width: 96%;
+ 
+padding-left: 0px;
+}
   .text{
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     padding-top: 5px;
-    padding: 10px; 
+    padding: 20px; 
   }
+  .penstyle2{
+  animation-name: penskew;
+  animation-duration: 5s;
+  transform: skewY(0deg);
+}
+@keyframes penskew{
+  0%{transform: skewY(0deg);}
+  100%{
+    transform: skewY(10deg);
+  }
+}
+
 }
